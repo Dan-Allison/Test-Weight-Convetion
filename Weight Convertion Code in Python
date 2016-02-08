@@ -1,13 +1,16 @@
 class Weight_converstions:
-    def kg_to_st(self, kg):
-        output1 = kg * 0.157473
-        print "My weight in stones is %.2f" % output1
+    def kg_to_st(self):
+        kg = raw_input("What is your weight in kilograms?")
+        output1 = float(kg) * 0.157473
+        print "Your weight in stones is %.2f" % output1
         
-    def st_to_kg(self, st):
-        output2 = st * 6.35029
-        print "My weight in kilograms is %.2f" % output2      
+    def st_to_kg(self):
+        st = raw_input("What is your weight in stones?")
+        output2 = float(st) * 6.35029
+        print "Your weight in kilograms is %.2f" % output2   
               
 con_weight = Weight_converstions()
 
-con_weight.kg_to_st(99) # Insert weight in KG here
-con_weight.st_to_kg(15.59) # Insert weight in stones here
+con_weight.kg_to_st()
+print "" # Just a clean looking space between both questions
+con_weight.st_to_kg()
